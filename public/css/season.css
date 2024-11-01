@@ -1,0 +1,144 @@
+@media screen and (max-width: 450px) {
+    .header {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 750px) {
+    .header {
+        font-size: 11px;
+    }
+}
+
+#show-redirection-button {
+    transition: 0.4s;
+    font-size: 10px;
+}
+
+#show-redirection-button:hover {
+    color: #e70101;
+}
+
+.season__recap{
+    display : flex;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.season__poster {
+    height: 200px;
+    width: 150px;
+    margin: auto auto auto 5px;
+    border-radius: 10px;
+}
+
+.season__info{
+    display : flex;
+    flex-direction: column;
+    color : white;
+    font-family: Raleway-Bold, sans-serif;
+    font-size: 20px;
+}
+
+.season__info > a {
+    transition: 0.5s;
+}
+.season__info > a:hover{
+    transform: scale(1.03);
+    color: #fababa;
+}
+
+
+.season__episode{
+    display : flex;
+    margin : auto;
+    flex-direction : column;
+    min-width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    color : white;
+    background-color: rgb(35, 37, 43);
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.season__episode:hover {
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+    transform: scale(1.01);
+}
+
+.season:hover {
+    background-color: rgb(97, 97, 98);
+    transform: scale(1.01);
+}
+
+.season__info > a, .season__info > p  {
+    margin : 10px;
+}
+
+.episode__num{
+    font-family: Raleway-Bold, sans-serif;
+    margin : 5px;
+}
+
+.episode__text{
+    font-size: 12px;
+    margin : 5px;
+    text-align: justify;
+    font-family: Raleway-Light, sans-serif;
+}
+
+@media only screen and (min-width:600px) {
+    .season__info {
+        font-size: 25px;
+    }
+
+    .episode__num {
+        font-size: 17px;
+    }
+
+    .episode__text{
+        font-size: 13px;
+        font-family: Raleway-Medium, sans-serif;
+    }
+
+    #show-redirection-button {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width : 800px) {
+    .season__info {
+        font-size: 30px;
+        font-family: Raleway-ExtraBold, sans-serif;
+    }
+
+    #show-redirection-button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .season__info {
+        font-size: 35px;
+    }
+
+    .episode__text{
+        font-size: 14px;
+    }
+    .season__poster{
+        height: 250px;
+        width: 200px;
+        margin : 10px auto 10px 10px;
+    }
+    .season__episode{
+        min-width: 1000px;
+        max-width: 1000px;
+    }
+
+    #show-redirection-button {
+        font-size: 20px;
+    }
+}

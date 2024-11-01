@@ -1,0 +1,167 @@
+.menu {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#index-redirection-button {
+    transition: 0.4s;
+    font-size: 10px;
+}
+
+#index-redirection-button:hover {
+    color: #e70101;
+}
+
+.menu__buttons {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+#delete-button, #save-button {
+    background: linear-gradient(108.4deg, rgb(253, 44, 56) 3.3%, rgb(176, 2, 12) 98.4%);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition: 0.4s;
+}
+
+#delete-button:hover, #save-button:hover {
+    background: linear-gradient(319.6deg, rgb(243, 0, 79) 20.5%, rgb(255, 236, 68) 110.9%);
+}
+
+.show__recap{
+    display : flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(255, 65, 108), rgb(255, 75, 43));
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.show__poster {
+    height: 200px;
+    width: 150px;
+    margin: auto auto auto 5px;
+    border-radius: 10px;
+}
+
+.show__info{
+    display : flex;
+    flex-direction: column;
+}
+
+.show__titles {
+    display : flex;
+    flex-direction : column;
+    gap : 10px;
+    align-items: flex-end;
+    font-family: Raleway-Bold, sans-serif;
+
+}
+.show__name, .show__originalName{
+    font-size: 20px;
+    font-weight: bold;
+    color : white;
+}
+
+#show__overview{
+    font-size: 10px;
+    text-align: justify;
+    margin : 10px;
+    color : white;
+    font-family: Raleway-Light, sans-serif;
+}
+
+.season{
+    display : flex;
+    max-width: 1100px;
+    margin : auto;
+    background-color: rgb(35, 37, 43);
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.season:hover {
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+    transform: scale(1.01);
+}
+
+.season__poster{
+    height: 125px;
+    width: 75px;
+    margin : 5px;
+    border-radius: 10px;
+}
+
+.season__title{
+    margin : auto auto auto 5px;
+    font-family: Raleway-Medium, sans-serif;
+}
+
+@media only screen and (min-width : 600px){
+    .show__poster, .season__poster{
+        margin : auto auto auto 10px
+    }
+
+    #index-redirection-button {
+        font-size: 13px;
+    }
+
+    #delete-button, #save-button {
+        font-size: 13px;
+    }
+
+    #show__overview {
+        font-family: Raleway-Medium, sans-serif;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width : 800px){
+    #index-redirection-button {
+        font-size: 16px;
+    }
+
+    #delete-button, #save-button {
+        font-size: 16px;
+    }
+
+    #show__overview {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width : 1000px){
+    .show__poster{
+        height: 300px;
+        width: 250px;
+        margin : 15px;
+    }
+
+    .season__poster{
+        height: 200px;
+        width: 150px;
+        margin : 10px;
+    }
+    .show__name, .show__originalName{
+        margin : 10px 10px auto auto;
+        font-size: 30px;
+    }
+    #show__overview{
+        font-size: 20px;
+        margin : 15px
+    }
+    .season__title{
+        font-size: 20px;
+    }
+
+    #index-redirection-button {
+        font-size: 20px;
+    }
+
+    #delete-button, #save-button {
+        font-size: 20px;
+    }
+}

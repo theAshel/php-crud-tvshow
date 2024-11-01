@@ -1,0 +1,59 @@
+{
+    "name": "pham0019/sae2-01",
+    "description": "SAE 2.01 - Développement d'une application web",
+    "type": "project",
+    "license": "Copyleft",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hoang Long Pham",
+            "email": "hoang-long.pham1@etudiant.univ-reims.fr"
+        },
+        {
+            "name": "Harish Komagan",
+            "email": "harish.komagan@etudiant.univ-reims.fr"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    },
+    "scripts" : {
+        "start:windows": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.bat"
+            ],
+        "start:linux": [
+            "Composer\\Config::disableProcessTimeout",
+            "bin/run-server.sh"
+        ],
+        "start": [
+            "@start:linux"
+        ],
+        "test:crud": [
+            "php vendor/bin/codecept run Crud"
+        ],
+        "test:codecept": [
+            "php vendor/bin/codecept clean",
+            "@test:crud"
+        ],
+        "test": [
+            "@test:codecept"
+        ]
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.58",
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1",
+        "codeception/module-asserts": "^1",
+        "codeception/module-db": "^1"
+    }
+}

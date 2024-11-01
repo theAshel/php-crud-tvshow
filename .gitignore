@@ -1,0 +1,10 @@
+*.swp
+*.tmp
+*~
+.idea*
+/vendor/
+.php-cs-fixer.cache
+/.mypdo.ini
+.mypdo.test.ini
+tests/tvshow-lite.sqlite
+tests/tvshow-lite.sqlite_snapshot

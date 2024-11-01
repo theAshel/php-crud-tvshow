@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+}
+
+HTML {
+    height : 100vh;
+}
+
+body {
+    height: 100%;
+    padding: 10px;
+    display : flex;
+    box-sizing: border-box;
+    flex-direction : column;
+    gap: 10px;
+    max-width: 1300px;
+    margin : auto;
+    background: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 20px;
+    color : white;
+    font-family: Raleway-Black, sans-serif;
+}
+
+.menu {
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Raleway-SemiBold, sans-serif;
+    display: flex;
+}
+
+.content {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgb(30, 29, 29);
+    flex-grow: 1;
+    gap: 10px;
+    overflow-x: hidden;
+    box-shadow: rgba(214, 214, 217, 0.19) 0px 4px 16px, rgba(217, 214, 214, 0.18) 0px 8px 24px, rgba(54, 54, 54, 0.38) 0px 16px 56px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color : white;
+    font-size: 13px;
+    font-family: Raleway-SemiBold, sans-serif;
+}
+
+a {
+    text-decoration: None;
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    .header {
+        font-size: 17px;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+/* --------------- scroll bar --------------- */
+/* WebKit */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #880202;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #880202 rgb(0, 0, 0, 0);
+}
+/* --------------- scroll bar --------------- */
+
+@font-face {
+    font-family: "Raleway-Black";
+    src:
+        url("../fonts/raleway/Raleway-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src:
+            url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-BoldItalic";
+    src:
+            url("../fonts/raleway/Raleway-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBold";
+    src:
+            url("../fonts/raleway/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBoldItalic";
+    src:
+            url("../fonts/raleway/Raleway-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src:
+            url("../fonts/raleway/Raleway-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLightItalic";
+    src:
+            url("../fonts/raleway/Raleway-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Italic";
+    src:
+            url("../fonts/raleway/Raleway-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src:
+            url("../fonts/raleway/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-LightItalic";
+    src:
+            url("../fonts/raleway/Raleway-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src:
+            url("../fonts/raleway/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-MediumItalic";
+    src:
+            url("../fonts/raleway/Raleway-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src:
+            url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src:
+            url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBoldItalic";
+    src:
+            url("../fonts/raleway/Raleway-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-Thin";
+    src:
+            url("../fonts/raleway/Raleway-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway-ThinItalic";
+    src:
+            url("../fonts/raleway/Raleway-ThinItalic.ttf") format("truetype");
+}
